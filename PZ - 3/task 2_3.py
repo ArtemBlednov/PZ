@@ -14,8 +14,8 @@ while type(Number_first) != float:
         Number_first = input('Попробуйте еще раз: ')
 #######################################################################
 
-if Number_first // 10 + Number_first % 10 % 2 == 0:
-    Number_first += 2
+if Number_first // 10 + Number_first % 10 % 2 == 0: # Нахождение каждой из цифр числа,
+    Number_first += 2                               # Выполнение условия.
 else:
     Number_first -= 2
 
