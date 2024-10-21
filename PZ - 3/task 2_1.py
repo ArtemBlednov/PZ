@@ -10,7 +10,7 @@ while type(Number_first) != float:
         Number_first = float(Number_first)
     except ValueError:
         print('Неправильный тип данных, введите число')
-        first_car = input('Попробуйте еще раз: ')
+        Number_first = input('Попробуйте еще раз: ')
 #######################################################################
 Number_second = input('Введите второе число: ')
 
@@ -19,7 +19,7 @@ while type(Number_second) != float:
         Number_second = float(Number_second)
     except ValueError:
         print('Неправильный тип данных, введите число')
-        first_car = input('Попробуйте еще раз: ')
+        Number_second = input('Попробуйте еще раз: ')
 #######################################################################
 # Конец обработки исключений!!!
 
