@@ -10,7 +10,7 @@ while type(Number_first) != float:
         Number_first = float(Number_first)
     except ValueError:
         print('Неправильный тип данных, введите число')
-        first_car = input('Попробуйте еще раз: ')
+        Number_first = input('Попробуйте еще раз: ')
 #######################################################################
 
 if Number_first % 2 == 0:
