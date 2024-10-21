@@ -24,7 +24,8 @@ while type(Number_second) != float:
 # Конец обработки исключений!!!
 
 summ = Number_first + Number_second
-if summ % 5 == 0:
+
+if summ % 5 == 0:   #проверка на кратность
     summ += 1
 else:
     summ -= 2
