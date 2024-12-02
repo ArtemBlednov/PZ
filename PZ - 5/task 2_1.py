@@ -4,33 +4,15 @@
 
 def Summator(numbers):
 
-    return(sum(int(digit) for digit in str(numbers)))
+    return (sum(int(digit) for digit in str(numbers)))
 
 # Обработка исключений:
 while True:
     try:
-        num_first = int(input('Введите первое число: '))
+        num_first, num_second, num_third = [int(input(f'Введите {i} число: ')) for i in ['1', '2', '3']]
         break
     except ValueError:
-        print('Ошибка: Введите корректное число.')
-
-#############################################################
-
-while True:
-    try:
-        num_second = int(input('Введите второе число: '))
-        break
-    except ValueError:
-        print('Ошибка: Введите корректное число.')
-
-#############################################################
-while True:
-    try:
-        num_third = int(input('Введите третье число: '))
-        break
-    except ValueError:
-        print('Ошибка: Введите корректное число.')
-
+        print('Ошибка: Введите корректные числа.')
 # Конец обработки исключений
 
 
