@@ -10,6 +10,6 @@ last_local_max_index = -1  # Последний индекс не рассмат
 
 for i in range(1, n - 1):  # Итерируемся по элементам (кроме первого и последнего)
     if list_numbers[i] > list_numbers[i - 1] and list_numbers[i] > list_numbers[i + 1]:
-        last_local_max_index = i  # Запоминаем индекс
+        last_local_max_index = i
 
 print(last_local_max_index)
