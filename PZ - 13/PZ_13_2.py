@@ -2,6 +2,8 @@
 иначе FALSE.'''
 
 import random
+from functools import reduce
+from tkinter.ttk import Treeview
 
 while True:
     try:
@@ -15,15 +17,7 @@ new_matrix = [[random.randint(-5, 30) for j in range(n)] for i in range(n)]
 for i in new_matrix:
     print(i)
 
-request = False
-
-for i in new_matrix:
-    for j in i:
-        if j > 0:
-            request = True
-            break
-    if request:
-        break
+request = any(any(j > 0 for j in i) for i in new_matrix)
 
 print(request)
 
