@@ -4,8 +4,6 @@
 «50». Вывести номера телефонов горячих линий, связанных с ЕГЭ/ГИА."""
 
 import re
-from lib2to3.pgen2.tokenize import group
-from re import match
 
 file = open('hotline.txt', 'r', encoding='utf-8')
 
